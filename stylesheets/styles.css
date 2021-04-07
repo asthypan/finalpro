@@ -1,0 +1,140 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h2.title_section {
+  font-weight: 700;
+}
+
+.services_thumbnail {
+  width: 100%;
+}
+
+.button_thumbnail {
+  background-color: #85603F;
+  border: none;
+  margin-top: -30px;
+}
+
+.button_thumbnail:hover {
+  background-color: #BD9354;
+  border: none;
+  margin-top: -30px;
+}
+
+.financial_planning_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+
+.services_thumbnail:hover .financial_planning_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon_experience {
+  font-size: 3em;
+}
+
+.team_thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+ul.nav_list li {
+  display: inline;
+  list-style: none;
+  color: black;
+  font-weight: 500;
+}
+
+ul.nav_list li:hover {
+  background-color: #85603F;
+  color: white;
+  cursor: pointer;
+}
+
+
+.list_menu {
+  align-self: center;
+  text-align-last: justify;
+}
+
+a:link, a:visited {
+  color: inherit;
+  font-style: unset;
+}
+
+@media screen and (max-width: 720px) {
+  .paragraph_header {
+    padding-left: 2em;
+    width: 500px;
+    top: 250px;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .paragraph_header {
+    padding-left: 4em;
+    width: 800px;
+    top: 250px;
+    position: absolute;
+  }
+}
+
+.footer_column {
+  background-color: #85603F;
+  color: white;
+}
+
+ul.footer_socmed li {
+  display: inline;
+  list-style: none;
+  font-weight: 500;
+  padding-left: 0;
+  margin-right: 20px;
+}
+
+.icon_footer {
+  font-size: 2em;
+}
+
+.img_experience {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.todo-items {
+  list-style: none;
+  padding-left: 1em;
+}
+
+
+
+@media (max-width: 991px) {
+  #main-navbar {
+    clear: both;
+  }
+}
+
+.title_collapsed {
+  top: 600px;
+}
